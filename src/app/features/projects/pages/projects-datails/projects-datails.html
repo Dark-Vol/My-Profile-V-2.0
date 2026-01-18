@@ -1,0 +1,30 @@
+<div class="projects-details-container">
+  <div class="header">
+    <button class="back-button" (click)="router.navigate(['/projects'])">← Back to Technologies</button>
+    <h1>Projects using {{ technologyName }}</h1>
+    <p class="projects-count">{{ filteredProjects.length }} {{ filteredProjects.length === 1 ? 'project' : 'projects' }}</p>
+  </div>
+
+  <div class="projects-grid">
+    @for (project of filteredProjects; track project.id) {
+      <div class="project-card" (click)="navigateToProject(project.id)">
+        <div class="project-header" [style.background-color]="project.mainColor">
+          <img [src]="'/img/' + project.logo" [alt]="project.title + ' logo'" class="project-logo" />
+        </div>
+        <div class="project-content">
+          <h3>{{ project.title }}</h3>
+          <p class="project-type">{{ project.type }} · {{ project.yearCreated }}</p>
+          <p class="project-goal">{{ project.projectGoal }}</p>
+          <div class="tech-stacks">
+            @for (tech of project.techStacks; track tech.name) {
+              <span class="tech-badge">{{ tech.name }}</span>
+            }
+          </div>
+        </div>
+      </div>
+    }
+    @empty {
+      <p class="no-projects">No projects found for this technology.</p>
+    }
+  </div>
+</div>

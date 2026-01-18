@@ -1,0 +1,17 @@
+<div class="technologies-container">
+  <h1>Technologies</h1>
+  <div class="technologies-grid">
+    @for (tech of technologies; track tech.slug) {
+      <a [routerLink]="['/projects/technology', tech.slug]" class="tech-card">
+        <div class="tech-icon">
+          <img [src]="'/img/' + tech.icon" [alt]="tech.name" />
+        </div>
+        <div class="tech-info">
+          <h3>{{ tech.name }}</h3>
+          <p class="tech-type">{{ tech.type }}</p>
+          <p class="project-count">{{ tech.projectCount }} {{ tech.projectCount === 1 ? 'project' : 'projects' }}</p>
+        </div>
+      </a>
+    }
+  </div>
+</div>

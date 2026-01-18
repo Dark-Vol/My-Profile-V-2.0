@@ -1,0 +1,62 @@
+@if (project) {
+  <div class="project-item-container">
+    <button class="back-button" (click)="navigateBack()">← Back</button>
+    
+    <div class="project-hero" [style.background-color]="project.mainColor">
+      <img [src]="'/img/' + project.logo" [alt]="project.title + ' logo'" class="project-logo-hero" />
+      <h1>{{ project.title }}</h1>
+      <p class="project-meta">{{ project.type }} · {{ project.yearCreated }}</p>
+    </div>
+
+    <div class="project-content-wrapper">
+      <div class="project-image-section">
+        <img [src]="'/img/' + project.image" [alt]="project.title" class="project-main-image" />
+      </div>
+
+      <div class="project-info-section">
+        <div class="info-card">
+          <h2>Project Goal</h2>
+          <p>{{ project.projectGoal }}</p>
+        </div>
+
+        <div class="info-card">
+          <h2>Overview</h2>
+          <p>{{ project.overview }}</p>
+        </div>
+
+        <div class="info-card">
+          <h2>Technologies Used</h2>
+          <div class="tech-stacks-grid">
+            @for (tech of project.techStacks; track tech.name) {
+              <div class="tech-stack-item">
+                <img [src]="'/img/' + tech.icon" [alt]="tech.name" class="tech-icon" />
+                <div class="tech-info">
+                  <span class="tech-name">{{ tech.name }}</span>
+                  <span class="tech-type">{{ tech.type }}</span>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+
+        <div class="info-card links-card">
+          @if (project.projectLink) {
+            <a [href]="project.projectLink" target="_blank" rel="noopener noreferrer" class="project-link">
+              <span>🌐</span> View Live Project
+            </a>
+          }
+          @if (project.projectLinkGit) {
+            <a [href]="project.projectLinkGit" target="_blank" rel="noopener noreferrer" class="project-link">
+              <span>🔗</span> View on GitHub
+            </a>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+} @else {
+  <div class="project-not-found">
+    <h2>Project not found</h2>
+    <button (click)="navigateBack()">← Back to Projects</button>
+  </div>
+}
