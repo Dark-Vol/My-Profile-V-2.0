@@ -1,0 +1,30 @@
+.header{
+  background-color: #f8f9fa;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-title{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #343a40;
+  }
+  .header-nav{
+    .header-nav-list{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      .header-nav-item{
+        .header-nav-link{
+          text-decoration: none;
+          color: #007bff;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
