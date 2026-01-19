@@ -1,21 +1,22 @@
+$purple: rgba(138, 43, 226, 0.3);
+$purpleHover: rgba(138, 43, 226, 0.6);
+$white: rgba(255, 255, 255, 0.95);
+$gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
+
 .about-container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem 1rem;
 
-  // Hero Section
   .about-hero {
     text-align: center;
     padding: 4rem 2rem;
     margin-bottom: 4rem;
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 50%, rgba(240, 147, 251, 0.2) 100%);
-    border: 1px solid rgba(138, 43, 226, 0.3);
+    border: 1px solid $purple;
     border-radius: 20px;
-    color: #fff;
-    box-shadow:
-      0 10px 40px rgba(0, 0, 0, 0.3),
-      0 0 60px rgba(138, 43, 226, 0.2),
-      inset 0 0 60px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(138, 43, 226, 0.2), inset 0 0 60px rgba(102, 126, 234, 0.1);
     position: relative;
     overflow: hidden;
 
@@ -42,7 +43,7 @@
       .hero-title {
         font-size: 3.5rem;
         font-weight: 700;
-        margin: 0 0 1rem 0;
+        margin: 0 0 1rem;
         line-height: 1.2;
         background: linear-gradient(135deg, #fff 0%, #e0e0e0 50%, #fff 100%);
         -webkit-background-clip: text;
@@ -53,7 +54,7 @@
 
       .hero-subtitle {
         font-size: 1.5rem;
-        margin: 0 0 2rem 0;
+        margin: 0 0 2rem;
         opacity: 0.95;
         font-weight: 300;
         color: #003D74;
@@ -67,7 +68,7 @@
         padding: 1.5rem;
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
-        border: 1px solid rgba(138, 43, 226, 0.3);
+        border: 1px solid $purple;
         border-radius: 16px;
         position: relative;
         z-index: 1;
@@ -93,7 +94,7 @@
           .contact-value {
             font-size: 0.95rem;
             color: rgb(65, 102, 245);
-                        font-weight: 500;
+            font-weight: 500;
           }
 
           .contact-link {
@@ -127,7 +128,7 @@
           padding: 1rem 1.5rem;
           background: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(10px);
-          border: 1px solid rgba(138, 43, 226, 0.3);
+          border: 1px solid $purple;
           border-radius: 12px;
           text-decoration: none;
           color: rgb(65, 102, 245);
@@ -136,11 +137,9 @@
 
           &:hover {
             background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(138, 43, 226, 0.6);
+            border-color: $purpleHover;
             transform: translateY(-5px);
-            box-shadow:
-              0 8px 20px rgba(0, 0, 0, 0.3),
-              0 0 20px rgba(138, 43, 226, 0.4);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(138, 43, 226, 0.4);
           }
 
           img {
@@ -169,11 +168,10 @@
     }
   }
 
-  // Section Title
   .section-title {
     font-size: 2.5rem;
-    margin: 0 0 2rem 0;
-    background: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
+    margin: 0 0 2rem;
+    background: $textGradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -189,13 +187,12 @@
       transform: translateX(-50%);
       width: 80px;
       height: 4px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: $gradient;
       border-radius: 2px;
       box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
     }
   }
 
-  // About Section
   .about-section {
     margin-bottom: 4rem;
     padding: 2rem;
@@ -221,7 +218,6 @@
     }
   }
 
-  // Expertise Section
   .expertise-section {
     margin-bottom: 4rem;
     padding: 2rem;
@@ -233,9 +229,9 @@
       margin-top: 3rem;
 
       .expertise-card {
-        background: rgba(255, 255, 255, 0.95);
+        background: $white;
         backdrop-filter: blur(10px);
-        border: 1px solid rgba(138, 43, 226, 0.3);
+        border: 1px solid $purple;
         padding: 2rem;
         border-radius: 16px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -244,11 +240,9 @@
 
         &:hover {
           transform: translateY(-8px);
-          border-color: rgba(138, 43, 226, 0.6);
-          box-shadow:
-            0 8px 30px rgba(0, 0, 0, 0.4),
-            0 0 30px rgba(138, 43, 226, 0.3);
-          background: rgba(255, 255, 255, 1);
+          border-color: $purpleHover;
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 30px rgba(138, 43, 226, 0.3);
+          background: #fff;
         }
 
         .expertise-icon {
@@ -260,8 +254,8 @@
         .expertise-title {
           font-size: 1.5rem;
           font-weight: 600;
-          margin: 0 0 1rem 0;
-          background: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
+          margin: 0 0 1rem;
+          background: $textGradient;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -277,7 +271,6 @@
     }
   }
 
-  // Experience Section
   .experience-section {
     margin-bottom: 4rem;
     padding: 2rem;
@@ -295,7 +288,7 @@
         top: 0;
         bottom: 0;
         width: 2px;
-        background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        background: $gradient;
         box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
       }
 
@@ -314,36 +307,32 @@
           top: 0.5rem;
           width: 16px;
           height: 16px;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: $gradient;
           border-radius: 50%;
           border: 3px solid #0a0e27;
-          box-shadow:
-            0 0 0 3px rgba(138, 43, 226, 0.5),
-            0 0 20px rgba(138, 43, 226, 0.5);
+          box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.5), 0 0 20px rgba(138, 43, 226, 0.5);
         }
 
         .timeline-content {
-          background: rgba(255, 255, 255, 0.95);
+          background: $white;
           backdrop-filter: blur(10px);
-          border: 1px solid rgba(138, 43, 226, 0.3);
+          border: 1px solid $purple;
           padding: 1.5rem;
           border-radius: 12px;
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
           transition: all 0.3s ease;
 
           &:hover {
-            border-color: rgba(138, 43, 226, 0.6);
-            box-shadow:
-              0 8px 30px rgba(0, 0, 0, 0.4),
-              0 0 30px rgba(138, 43, 226, 0.3);
-            background: rgba(255, 255, 255, 1);
+            border-color: $purpleHover;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 30px rgba(138, 43, 226, 0.3);
+            background: #fff;
           }
 
           .timeline-title {
             font-size: 1.5rem;
             font-weight: 600;
-            margin: 0 0 0.5rem 0;
-            background: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
+            margin: 0 0 0.5rem;
+            background: $textGradient;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -351,12 +340,12 @@
 
           .timeline-period {
             font-size: 0.95rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: $gradient;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             font-weight: 500;
-            margin: 0 0 1rem 0;
+            margin: 0 0 1rem;
           }
 
           .timeline-description {
@@ -370,7 +359,6 @@
     }
   }
 
-  // What I Do Section
   .what-i-do-section {
     margin-bottom: 4rem;
     padding: 2rem;
@@ -382,8 +370,8 @@
       margin-top: 3rem;
 
       .activity-item {
-        background: rgba(255, 255, 255, 0.95);
-        border: 1px solid rgba(138, 43, 226, 0.3);
+        background: $white;
+        border: 1px solid $purple;
         padding: 2rem;
         border-radius: 16px;
         text-align: center;
@@ -393,18 +381,16 @@
 
         &:hover {
           transform: scale(1.05);
-          border-color: rgba(138, 43, 226, 0.6);
-          box-shadow:
-            0 8px 30px rgba(0, 0, 0, 0.4),
-            0 0 30px rgba(138, 43, 226, 0.3);
-          background: rgba(255, 255, 255, 1);
+          border-color: $purpleHover;
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 30px rgba(138, 43, 226, 0.3);
+          background: #fff;
         }
 
         h3 {
           font-size: 1.5rem;
           font-weight: 600;
-          margin: 0 0 1rem 0;
-          background: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
+          margin: 0 0 1rem;
+          background: $textGradient;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -420,7 +406,6 @@
     }
   }
 
-  // Responsive Design
   @media (max-width: 768px) {
     .about-hero {
       padding: 3rem 1.5rem;
