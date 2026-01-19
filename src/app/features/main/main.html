@@ -1,1 +1,11 @@
-<p>main works!</p>
+<section class="main-container">
+  <h1>Welcome to the Main Feature</h1>
+  <p>This is the main section of the application where users can access core functionalities.</p>
+  <div class="my_skills-grid">
+    @for (skill of myskills; track skill.id) {
+      <div class="certificate-item">
+        <img [src]="skill.image" [alt]="skill.name" />
+      </div>
+    }
+  </div>
+</section>
