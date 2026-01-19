@@ -1,11 +1,47 @@
 <section class="main-container">
-  <h1>Welcome to the Main Feature</h1>
-  <p>This is the main section of the application where users can access core functionalities.</p>
-  <div class="my_skills-grid">
-    @for (skill of myskills; track skill.id) {
-      <div class="certificate-item">
-        <img [src]="skill.image" [alt]="skill.name" />
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Full Stack Developer</h1>
+      <p class="hero-subtitle">Building modern web and mobile applications with cutting-edge technologies</p>
+      <p class="hero-description">
+        Passionate developer specializing in frontend and backend development,
+        creating scalable and efficient solutions for real-world problems.
+      </p>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="skills-section">
+    <h2 class="section-title">Technologies & Skills</h2>
+    <p class="section-description">Technologies I work with</p>
+    <div class="skills-grid">
+      @for (skill of myskills; track skill.id) {
+        <div class="skill-item">
+          <div class="skill-icon">
+            <img [src]="'/' + skill.image" [alt]="skill.name" />
+          </div>
+          <span class="skill-name">{{ skill.name }}</span>
+        </div>
+      }
+    </div>
+  </div>
+
+  <!-- Stats Section -->
+  <div class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">{{ myskills.length }}+</div>
+        <div class="stat-label">Technologies</div>
       </div>
-    }
+      <div class="stat-item">
+        <div class="stat-number">25+</div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+    </div>
   </div>
 </section>
