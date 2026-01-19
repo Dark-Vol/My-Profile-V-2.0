@@ -1,0 +1,102 @@
+// Cosmic Theme - Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #0a0e27;
+  background-image: 
+    radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+    radial-gradient(2px 2px at 60% 70%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(1px 1px at 50% 50%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 80% 10%, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(2px 2px at 90% 40%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 33% 60%, rgba(255, 255, 255, 0.3), transparent),
+    radial-gradient(1px 1px at 15% 80%, rgba(255, 255, 255, 0.4), transparent),
+    linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1629 100%);
+  background-size: 
+    200% 200%,
+    200% 200%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%;
+  background-position: 
+    0% 0%,
+    100% 100%,
+    50% 50%,
+    80% 10%,
+    90% 40%,
+    33% 60%,
+    15% 80%,
+    0% 0%;
+  animation: cosmicBackground 20s ease infinite;
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+@keyframes cosmicBackground {
+  0%, 100% {
+    background-position: 
+      0% 0%,
+      100% 100%,
+      50% 50%,
+      80% 10%,
+      90% 40%,
+      33% 60%,
+      15% 80%,
+      0% 0%;
+  }
+  50% {
+    background-position: 
+      100% 100%,
+      0% 0%,
+      50% 50%,
+      20% 90%,
+      10% 60%,
+      67% 40%,
+      85% 20%,
+      0% 0%;
+  }
+}
+
+main {
+  min-height: calc(100vh - 200px);
+  position: relative;
+  z-index: 1;
+}
+
+// Cosmic glow effects
+.cosmic-glow {
+  box-shadow: 
+    0 0 20px rgba(138, 43, 226, 0.3),
+    0 0 40px rgba(75, 0, 130, 0.2),
+    0 0 60px rgba(138, 43, 226, 0.1);
+}
+
+// Scrollbar styling
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e27;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  border-radius: 5px;
+  
+  &:hover {
+    background: linear-gradient(180deg, #764ba2 0%, #667eea 100%);
+  }
+}
