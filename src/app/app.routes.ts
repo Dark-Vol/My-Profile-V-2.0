@@ -64,6 +64,12 @@ export const routes: Routes = [
         .then(m => m.Sertificate)
   },
   {
+    path: 'about',
+    loadComponent: () =>
+      import('./features/about/about')
+        .then(m => m.About)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
