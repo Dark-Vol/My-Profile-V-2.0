@@ -1,2 +1,0 @@
-import './polyfills.server.mjs';
-import{h as m}from"./chunk-7JFMOUYW.mjs";import{Qa as i,Ra as a,Za as o,ya as t}from"./chunk-RYMGXOKL.mjs";import"./chunk-T55IDOPT.mjs";var s=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=t({type:n,selectors:[["app-main"]],decls:2,vars:0,template:function(e,r){e&1&&(i(0,"p"),o(1,"main works!"),a())},dependencies:[m],encapsulation:2})};export{s as Main};

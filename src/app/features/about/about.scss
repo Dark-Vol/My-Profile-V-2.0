@@ -1,8 +1,8 @@
-$purple: rgba(138, 43, 226, 0.3);
-$purpleHover: rgba(138, 43, 226, 0.6);
-$white: rgba(255, 255, 255, 0.95);
-$gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-$textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
+$p: rgba(138, 43, 226, 0.3);
+$ph: rgba(138, 43, 226, 0.6);
+$w: rgba(255, 255, 255, 0.95);
+$g: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$tg: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
 
 .about-container {
   max-width: 1400px;
@@ -14,9 +14,9 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
     padding: 4rem 2rem;
     margin-bottom: 4rem;
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 50%, rgba(240, 147, 251, 0.2) 100%);
-    border: 1px solid $purple;
+    border: 1px solid $p;
     border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(138, 43, 226, 0.2), inset 0 0 60px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(138, 43, 226, 0.2);
     position: relative;
     overflow: hidden;
 
@@ -28,10 +28,10 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
       width: 200%;
       height: 200%;
       background: radial-gradient(circle, rgba(138, 43, 226, 0.1) 0%, transparent 70%);
-      animation: rotate 20s linear infinite;
+      animation: r 20s linear infinite;
     }
 
-    @keyframes rotate {
+    @keyframes r {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
@@ -55,7 +55,6 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
       .hero-subtitle {
         font-size: 1.5rem;
         margin: 0 0 2rem;
-        opacity: 0.95;
         font-weight: 300;
         color: #003D74;
       }
@@ -68,7 +67,7 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
         padding: 1.5rem;
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
-        border: 1px solid $purple;
+        border: 1px solid $p;
         border-radius: 16px;
         position: relative;
         z-index: 1;
@@ -85,15 +84,16 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
             line-height: 1;
           }
 
-          .contact-label {
+          .contact-label, .contact-value {
             font-size: 0.95rem;
-            font-weight: 600;
             color: rgb(65, 102, 245);
           }
 
+          .contact-label {
+            font-weight: 600;
+          }
+
           .contact-value {
-            font-size: 0.95rem;
-            color: rgb(65, 102, 245);
             font-weight: 500;
           }
 
@@ -106,7 +106,6 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
             &:hover {
               color: #fff;
               border-bottom-color: rgba(255, 255, 255, 0.5);
-              text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
             }
           }
         }
@@ -128,7 +127,7 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
           padding: 1rem 1.5rem;
           background: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(10px);
-          border: 1px solid $purple;
+          border: 1px solid $p;
           border-radius: 12px;
           text-decoration: none;
           color: rgb(65, 102, 245);
@@ -137,7 +136,7 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
 
           &:hover {
             background: rgba(255, 255, 255, 0.2);
-            border-color: $purpleHover;
+            border-color: $ph;
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(138, 43, 226, 0.4);
           }
@@ -171,7 +170,7 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
   .section-title {
     font-size: 2.5rem;
     margin: 0 0 2rem;
-    background: $textGradient;
+    background: $tg;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -187,9 +186,8 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
       transform: translateX(-50%);
       width: 80px;
       height: 4px;
-      background: $gradient;
+      background: $g;
       border-radius: 2px;
-      box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
     }
   }
 
@@ -229,9 +227,9 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
       margin-top: 3rem;
 
       .expertise-card {
-        background: $white;
+        background: $w;
         backdrop-filter: blur(10px);
-        border: 1px solid $purple;
+        border: 1px solid $p;
         padding: 2rem;
         border-radius: 16px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -240,7 +238,7 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
 
         &:hover {
           transform: translateY(-8px);
-          border-color: $purpleHover;
+          border-color: $ph;
           box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 30px rgba(138, 43, 226, 0.3);
           background: #fff;
         }
@@ -248,14 +246,13 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
         .expertise-icon {
           font-size: 3rem;
           margin-bottom: 1rem;
-          filter: drop-shadow(0 0 10px rgba(138, 43, 226, 0.5));
         }
 
         .expertise-title {
           font-size: 1.5rem;
           font-weight: 600;
           margin: 0 0 1rem;
-          background: $textGradient;
+          background: $tg;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -288,8 +285,7 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
         top: 0;
         bottom: 0;
         width: 2px;
-        background: $gradient;
-        box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+        background: $g;
       }
 
       .timeline-item {
@@ -307,23 +303,23 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
           top: 0.5rem;
           width: 16px;
           height: 16px;
-          background: $gradient;
+          background: $g;
           border-radius: 50%;
           border: 3px solid #0a0e27;
-          box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.5), 0 0 20px rgba(138, 43, 226, 0.5);
+          box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.5);
         }
 
         .timeline-content {
-          background: $white;
+          background: $w;
           backdrop-filter: blur(10px);
-          border: 1px solid $purple;
+          border: 1px solid $p;
           padding: 1.5rem;
           border-radius: 12px;
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
           transition: all 0.3s ease;
 
           &:hover {
-            border-color: $purpleHover;
+            border-color: $ph;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 30px rgba(138, 43, 226, 0.3);
             background: #fff;
           }
@@ -332,7 +328,7 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
             font-size: 1.5rem;
             font-weight: 600;
             margin: 0 0 0.5rem;
-            background: $textGradient;
+            background: $tg;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -340,7 +336,7 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
 
           .timeline-period {
             font-size: 0.95rem;
-            background: $gradient;
+            background: $g;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -370,8 +366,8 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
       margin-top: 3rem;
 
       .activity-item {
-        background: $white;
-        border: 1px solid $purple;
+        background: $w;
+        border: 1px solid $p;
         padding: 2rem;
         border-radius: 16px;
         text-align: center;
@@ -381,7 +377,7 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
 
         &:hover {
           transform: scale(1.05);
-          border-color: $purpleHover;
+          border-color: $ph;
           box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 30px rgba(138, 43, 226, 0.3);
           background: #fff;
         }
@@ -390,7 +386,7 @@ $textGradient: linear-gradient(135deg, #d4a5ff 0%, #8a2be2 100%);
           font-size: 1.5rem;
           font-weight: 600;
           margin: 0 0 1rem;
-          background: $textGradient;
+          background: $tg;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;

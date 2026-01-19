@@ -1,1 +1,0 @@
-import{f as m}from"./chunk-AEKFQAFD.js";import{Pa as i,Qa as a,Ya as o,za as t}from"./chunk-ZCALRJ4J.js";var s=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=t({type:n,selectors:[["app-main"]],decls:2,vars:0,template:function(e,r){e&1&&(i(0,"p"),o(1,"main works!"),a())},dependencies:[m],encapsulation:2})};export{s as Main};
