@@ -75,7 +75,7 @@ export const projects: Project[] = [
     logo: '',
     image: '',
     projectLink: '',
-    projectLinkGit: '',
+    projectLinkGit: 'https://github.com/Dark-Vol/Organick',
     overview: ``,
     techStacks: [
       {
@@ -108,10 +108,11 @@ export const projects: Project[] = [
     yearCreated: '2025',
     projectGoal: '',
     logo: '',
-    image: '',
+    image: 'projects/YtYt.png',
     projectLink: '',
-    projectLinkGit: '',
-    overview: ``,
+    projectLinkGit: 'https://github.com/Dark-Vol/Ytyt',
+    overview: `YtYt - это веб-приложение для онлайн-школы программирования, которая предлагает курсы по различным языкам программирования (Python, JavaScript, C#).
+    Платформа включает систему управления студентами, группами, интерактивный редактор кода и современный пользовательский интерфейс.`,
     techStacks: [
       {
         name: 'CSS',
@@ -145,8 +146,8 @@ export const projects: Project[] = [
     logo: '',
     image: '',
     projectLink: '',
-    projectLinkGit: '',
-    overview: ``,
+    projectLinkGit: 'https://github.com/Dark-Vol/poland24',
+    overview: `Платформа для заказов и доставки товаров из польских интернет-магазинов. Веб-приложение на Next.js с поддержкой мультиязычности и административной панелью.`,
     techStacks: [
       {
         name: 'CSS',
@@ -185,8 +186,8 @@ export const projects: Project[] = [
     logo: '',
     image: '',
     projectLink: '',
-    projectLinkGit: '',
-    overview: ``,
+    projectLinkGit: 'https://github.com/Dark-Vol/nextjs-form-modal',
+    overview: `Приложение для управления пользователями, построенное на Next.js 14 с использованием параллельных маршрутов (Parallel Routes) и перехватывающих маршрутов (Intercepting Routes) для реализации модальных окон.`,
     techStacks: [
       {
         name: 'TailwindCSS',
@@ -235,8 +236,8 @@ export const projects: Project[] = [
     logo: '',
     image: '',
     projectLink: '',
-    projectLinkGit: '',
-    overview: ``,
+    projectLinkGit: 'https://github.com/Dark-Vol/ToDo-V.2.0-ReactNative',
+    overview: `A modern to-do application built with React Native and Expo. Manage your tasks with a clean, intuitive interface that works on iOS, Android, and Web.`,
     techStacks: [
       {
         name: 'React Native',
@@ -275,8 +276,8 @@ export const projects: Project[] = [
     logo: '',
     image: '',
     projectLink: '',
-    projectLinkGit: '',
-    overview: ``,
+    projectLinkGit: 'https://github.com/Dark-Vol/My-Librery',
+    overview: `Полнофункциональное веб-приложение для управления библиотекой книг с современным Angular фронтендом и Node.js/Express бэкендом.`,
     techStacks: [
       {
         name: 'Sass',
@@ -307,7 +308,7 @@ export const projects: Project[] = [
   },
   {
     id: 7,
-    title: 'Web application',
+    title: 'React Web application',
     mainColor: '#FF6347',
     type: 'web application fpr weather',
     yearCreated: '2025',
@@ -315,7 +316,7 @@ export const projects: Project[] = [
     logo: '',
     image: '',
     projectLink: '',
-    projectLinkGit: '',
+    projectLinkGit: 'https://github.com/Dark-Vol/react_users_weather',
     overview: ``,
     techStacks: [
       {
@@ -347,7 +348,7 @@ export const projects: Project[] = [
   },
   {
     id: 8,
-    title: 'Web application',
+    title: 'Angular Web application',
     mainColor: '#20B2AA',
     type: 'web application fpr weather',
     yearCreated: '2025',
@@ -355,7 +356,7 @@ export const projects: Project[] = [
     logo: '',
     image: '',
     projectLink: '',
-    projectLinkGit: '',
+    projectLinkGit: 'https://github.com/Dark-Vol/angular_users_weather',
     overview: ``,
     techStacks: [
       {
@@ -390,8 +391,8 @@ export const projects: Project[] = [
     logo: '',
     image: '',
     projectLink: '',
-    projectLinkGit: '',
-    overview: ``,
+    projectLinkGit: 'https://github.com/Dark-Vol/vertikal_akva_bot',
+    overview: `Телеграм-бот для предоставления информации об услугах, тренерах и программах фитнес-комплекса Вертикаль Аква.`,
     techStacks: [
       {
         name: 'Python',
@@ -425,8 +426,8 @@ export const projects: Project[] = [
     logo: '',
     image: '',
     projectLink: '',
-    projectLinkGit: '',
-    overview: ``,
+    projectLinkGit: 'https://github.com/Dark-Vol/createx',
+    overview: `A modern online learning platform built with React and TypeScript. Createx Online School provides a comprehensive educational experience with courses, events, blog posts, and user authentication.`,
     techStacks: [
       {
         name: 'Sass',
