@@ -41,7 +41,7 @@ export const routes: Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('./features/main/main')
+      import('./features/main/types/main')
         .then(m => m.Main)
   },
   {

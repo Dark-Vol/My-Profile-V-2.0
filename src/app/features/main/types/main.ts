@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-main',
   imports: [CommonModule],
-  templateUrl: './main.html',
-  styleUrl: './main.scss',
+  templateUrl: '../main.html',
+  styleUrl: '../main.scss',
 })
 export class Main {
   myskills: MySkills[] = [
@@ -248,6 +248,31 @@ export class Main {
       id: 48,
       name: 'Docker',
       image: 'img/icon/Docker.svg',
-    }
+    },
+    {
+      id: 49,
+      name: "C++",
+      image: "img/icon/C++ (CPlusPlus).svg",
+    },
+    {
+      id: 50,
+      name: "Power Shell",
+      image: "img/icon/Powershell.svg",
+    },
+    {
+      id: 51,
+      name: 'Android Studio',
+      image: 'img/icon/Android Studio.svg',
+    },
+    // {
+    //   id: 52,
+    //   name: "Java",
+    //   image: "img/icon/Java.svg",
+    // },
+    // {
+    //   id: 53,
+    //   name: "Moodle",
+    //   image: "img/icon/Moodle.svg",
+    // }
   ];
 }

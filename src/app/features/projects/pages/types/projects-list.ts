@@ -986,4 +986,75 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    id: 25,
+    title: 'Event Tracker App',
+    mainColor: '#9B59B6',
+    type: 'Web Application',
+    yearCreated: '2026',
+    projectGoal: '',
+    logo: '',
+    image: '',
+    projectLink: '',
+    projectLinkGit: '',
+    overview: ``,
+    techStacks: [
+      {
+        name: 'Angular',
+        type: 'Programming Language',
+        icon: 'icon/Angular.svg',
+      },
+      {
+        name: 'TypeScript',
+        type: 'Programming Language',
+        icon: 'icon/TypeScript.svg',
+      },
+      {
+        name: 'SASS',
+        type: 'Programming Language',
+        icon: 'icon/Sass.svg',
+      },
+      {
+        name: 'HTML',
+        type: 'Programming Language',
+        icon: 'icon/HTML5.svg',
+      },
+    ],
+  },
+  //   {
+  //   id: 26,
+  //   title: 'News App',
+  //   mainColor: '#9B59B6',
+  //   type: 'React Native Application',
+  //   yearCreated: '2025',
+  //   projectGoal: '',
+  //   logo: '',
+  //   image: '',
+  //   projectLink: '',
+  //   projectLinkGit: '',
+  //   overview: ``,
+  //   techStacks: [
+  //     {
+  //       name: 'React Native',
+  //       type: 'Programming Language',
+  //       icon: 'icon/icons8-react-native-100.svg',
+  //     },
+  //     {
+  //       name: 'Expo',
+  //       type: 'Programming Language',
+  //       icon: '',
+  //     },
+  //     {
+  //       name: 'Javascript',
+  //       type: 'Programming Language',
+  //       icon: 'icon/JavaScript.svg',
+  //     },
+  //     {
+  //       name: 'Expo Status Bar',
+  //       type: 'Programming Language',
+  //       icon: '',
+  //     },
+
+  //   ],
+  // },
 ];
