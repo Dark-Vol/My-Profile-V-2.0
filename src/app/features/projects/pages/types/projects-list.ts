@@ -1021,6 +1021,50 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    id: 26,
+    title: 'NoteCore++',
+    mainColor: '#00599C',
+    type: 'C++ Application',
+    yearCreated: '2026',
+    projectGoal: '',
+    logo: '',
+    image: '',
+    projectLink: '',
+    projectLinkGit: 'https://github.com/Dark-Vol/NoteCore-',
+    overview: `NoteCore++ — это демонстрационный проект, показывающий зрелый подход к архитектуре на C++. Проект демонстрирует:
+    Layered Architecture — разделение на слои (Domain, Application, Infrastructure, Presentation)
+    SOLID принципы — особенно Dependency Inversion
+    Чистую архитектуру — бизнес-логика независима от деталей реализации
+    Расширяемость — легко перейти от CLI к GUI, от файлов к БД`,
+    techStacks: [
+      {
+        name: 'C++',
+        type: 'Programming Language',
+        icon: 'icon/C++ (CPlusPlus).svg',
+      },
+      {
+        name: 'CMake',
+        type: 'Programming Language',
+        icon: 'icon/CMake.svg',
+      },
+      {
+        name: 'Catch2',
+        type: 'Programming Language',
+        icon: '',
+      },
+      {
+        name: "PowerShell",
+        type: 'Programming Language',
+        icon: 'icon/Powershell.svg',
+      },
+      {
+        name: "Batchifile",
+        type: 'Programming Language',
+        icon: '',
+      }
+    ],
+  },
   //   {
   //   id: 26,
   //   title: 'News App',

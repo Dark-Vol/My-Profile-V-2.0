@@ -30,7 +30,7 @@ export class ProjectsList {
 
     // Определяем группы технологий
     const pythonTechs = new Set([
-      'python', 'pandas', 'numpy', 'matplotlib', 'seaborn', 
+      'python', 'pandas', 'numpy', 'matplotlib', 'seaborn',
       'pygame', 'telethon', 'sqlite3', 'python telegram bot',
       'pytest', 'typer ', 'flet', 'gui tkinter', 'telegram.ext',
       'telegram', 'os', 'json', 'datatime', 'math'
@@ -41,11 +41,12 @@ export class ProjectsList {
     const nextTechs = new Set(['nextjs']);
     const htmlCssJsTechs = new Set(['html', 'css', 'javascript', 'htm', 'js icon']);
     const angularTechs = new Set(['angular']);
+    const cppTechs = new Set(['c++', 'cmake', 'catch2']);
 
     // Проходим по всем проектам
     projects.forEach(project => {
       const projectTechs = project.techStacks.map(t => t.name.toLowerCase().trim());
-      
+
       // Проверяем наличие технологий в проекте (в порядке приоритета)
       const hasNext = projectTechs.some(t => nextTechs.has(t));
       const hasReactNative = projectTechs.some(t => reactNativeTechs.has(t));
@@ -53,6 +54,8 @@ export class ProjectsList {
       const hasPython = projectTechs.some(t => pythonTechs.has(t));
       const hasHtmlCssJs = projectTechs.some(t => htmlCssJsTechs.has(t)) && !hasReact && !hasNext && !hasReactNative;
       const hasAngular = projectTechs.some(t => angularTechs.has(t));
+      const hasCpp = projectTechs.some(t => cppTechs.has(t));
+      // const hasJava = projectTechs.includes('java');
 
       // Добавляем проект в соответствующие группы
       if (hasNext) {
@@ -78,11 +81,18 @@ export class ProjectsList {
       if (hasAngular) {
         this.addToGroup(techMap, 'angular', 'Angular', 'Framework', 'icon/Angular.svg', 'angular');
       }
+
+      if (hasCpp) {
+        this.addToGroup(techMap, 'cpp', 'C++', 'Programming Language', 'icon/C++ (CPlusPlus).svg', 'cpp');
+      }
+      // if (hasJava) {
+      //   this.addToGroup(techMap, 'java', 'Java', 'Programming Language', 'icon/Java.svg', 'java');
+      // }
     });
 
     // Преобразуем Map в массив
     this.technologies = Array.from(techMap.values());
-    
+
     // Сортируем по количеству проектов (от большего к меньшему)
     this.technologies.sort((a, b) => b.projectCount - a.projectCount);
   }
