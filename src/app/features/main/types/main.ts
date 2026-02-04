@@ -252,27 +252,27 @@ export class Main {
     {
       id: 49,
       name: "C++",
-      image: "img/icon/C++ (CPlusPlus).svg",
+      image: "icon/C++ (CPlusPlus).svg",
     },
     {
       id: 50,
       name: "Power Shell",
-      image: "img/icon/Powershell.svg",
+      image: "icon/Powershell.svg",
     },
     {
       id: 51,
       name: 'Android Studio',
-      image: 'img/icon/Android Studio.svg',
+      image: 'icon/Android Studio.svg',
     },
     // {
     //   id: 52,
     //   name: "Java",
-    //   image: "img/icon/Java.svg",
+    //   image: "icon/Java.svg",
     // },
     // {
     //   id: 53,
     //   name: "Moodle",
-    //   image: "img/icon/Moodle.svg",
+    //   image: "icon/Moodle.svg",
     // }
   ];
 }
