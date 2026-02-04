@@ -39,6 +39,7 @@ export class ProjectsDatails implements OnInit {
     const nextTechs = new Set(['nextjs']);
     const htmlCssJsTechs = new Set(['html', 'css', 'javascript', 'htm', 'js icon']);
     const angularTechs = new Set(['angular']);
+    const cppTechs = new Set(['c++', 'cmake', 'catch2']);
 
     // Обработка различных групп технологий
     switch (this.technologySlug) {
@@ -90,6 +91,14 @@ export class ProjectsDatails implements OnInit {
         this.filteredProjects = projects.filter(project => {
           const projectTechs = project.techStacks.map(t => t.name.toLowerCase().trim());
           return projectTechs.some(t => angularTechs.has(t));
+        });
+        break;
+
+      case 'cpp':
+        this.technologyName = 'C++';
+        this.filteredProjects = projects.filter(project => {
+          const projectTechs = project.techStacks.map(t => t.name.toLowerCase().trim());
+          return projectTechs.some(t => cppTechs.has(t));
         });
         break;
 
